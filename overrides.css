@@ -1,0 +1,6 @@
+/* Official product-icon treatment for the animated skills canvas. */
+.product-mark{background:transparent!important;border-radius:0!important;box-shadow:none!important;gap:7px!important;color:#eff5d7!important}
+.product-mark b{display:none!important}
+.product-mark img{width:78px;height:78px;object-fit:contain;filter:drop-shadow(0 14px 20px #081b0870)}
+.product-mark span{color:#eff5d7!important;text-shadow:0 1px 8px #0d220d}
+@media(max-width:700px){.product-mark img{width:57px;height:57px}}
