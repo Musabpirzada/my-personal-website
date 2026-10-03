@@ -1,0 +1,4 @@
+.portrait-wrap { background:#0b1008; }
+.portrait-wrap img { object-position:center 22%; mix-blend-mode:normal; filter:grayscale(1) contrast(1.1); transform:scale(1.08); transition:transform .15s linear; will-change:transform; }
+.metric { transition:opacity .2s ease, transform .2s ease; }
+@media (prefers-reduced-motion:reduce) { .portrait-wrap img,.metric { transition:none!important; transform:none!important; } }
