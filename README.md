@@ -13,5 +13,8 @@ This is a dependency-free static site. Upload the contents of this folder to any
 ## Files
 
 - `index.html` - page content and semantic structure
-- `style.css` - responsive visual design
-- `script.js` - lightweight scroll-reveal interaction
+- `style.css` - theme tokens, layout, and all motion styles (graphite + ember theme)
+- `script.js` - intro loader, scroll reveals, word-by-word about text, count-up metrics, marquee skew, toolkit parallax, custom cursor and magnetic buttons
+- `assets/portrait.jpg` - web-optimized portrait used by the hero
+
+All animation respects `prefers-reduced-motion`.

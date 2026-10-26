@@ -4,106 +4,178 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Syed Musab Pirzada - Power Platform Developer and Dynamics 365 CRM Techno-Functional Consultant." />
+    <meta name="theme-color" content="#0a0a0b" />
     <title>Syed Musab Pirzada | Power Platform & Dynamics 365</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="assets/portrait.jpg" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="overrides.css" />
-    <link rel="stylesheet" href="personal-overrides.css" />
-    <link rel="stylesheet" href="top-section.css" />
+    <script>document.documentElement.classList.add('js');</script>
   </head>
   <body>
-    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <div class="loader" aria-hidden="true">
+      <div class="loader-name"><span>Syed Musab Pirzada</span></div>
+      <div class="loader-count"><span data-count>0</span>%</div>
+      <div class="loader-bar"><i></i></div>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"><i></i></div>
+    <div class="cursor" aria-hidden="true"><span></span></div>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Syed Musab Pirzada home">SMP<span>.</span></a>
       <nav aria-label="Primary navigation">
-        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a>
+        <a href="#about" class="roll" data-text="About"><span>About</span></a>
+        <a href="#expertise" class="roll" data-text="Expertise"><span>Expertise</span></a>
+        <a href="#toolkit" class="roll" data-text="Toolkit"><span>Toolkit</span></a>
+        <a href="#credentials" class="roll" data-text="Credentials"><span>Credentials</span></a>
       </nav>
-      <a class="header-link" href="mailto:musabpir2002@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+      <a class="pill" href="#contact" data-magnetic>Let's talk <span aria-hidden="true">↗</span></a>
     </header>
 
     <main id="top">
-      <section class="hero section-shell">
-        <p class="eyebrow reveal">Power Platform Developer · Dynamics 365 Consultant</p>
-        <div class="hero-grid hero-editorial">
-          <div class="hero-intro reveal"><div class="hero-rule"></div><h1>I make business<br /><em>systems</em> feel<br />simple.</h1><p>Power Platform Developer and Dynamics 365 consultant designing practical systems for better work.</p></div>
-          <figure class="hero-portrait reveal"><img src="profile-portrait.png" alt="Portrait of Syed Musab Pirzada" /></figure>
-          <div class="hero-side reveal">
-            <p class="hero-side-label">About me</p>
-            <p>I work at the intersection of business operations and technology - translating manual processes into systems people can actually use.</p>
-            <a class="round-arrow" href="#about" aria-label="Learn more about Syed Musab Pirzada">↓</a>
+      <section class="hero shell">
+        <div class="hero-text">
+          <p class="eyebrow" data-intro><span class="dot"></span>Power Platform Developer · Dynamics 365 Consultant</p>
+          <h1 class="hero-title">
+            <span class="line"><span>I make business</span></span>
+            <span class="line"><span><em>systems</em> feel</span></span>
+            <span class="line"><span>simple.</span></span>
+          </h1>
+          <p class="hero-lede" data-intro>Power Platform Developer and Dynamics 365 consultant designing practical systems for better work.</p>
+          <div class="hero-cta" data-intro>
+            <a class="btn btn-solid" href="#contact" data-magnetic>Start a conversation <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#about" data-magnetic>About me <span aria-hidden="true">↓</span></a>
           </div>
         </div>
-        <div class="hero-footer reveal">
-          <span>Lahore, Pakistan</span><span class="availability"><i></i> Available for opportunities</span><span>2026 © SMP</span>
+        <figure class="hero-portrait">
+          <div class="portrait-frame"><img src="assets/portrait.jpg" width="880" height="1320" alt="Portrait of Syed Musab Pirzada" /></div>
+          <figcaption><span>Syed Musab Pirzada</span><span>Lahore, PK</span></figcaption>
+        </figure>
+        <div class="hero-meta" data-intro>
+          <span><span class="avail"></span>Available for opportunities</span>
+          <span>Lahore <time data-clock>--:--</time> PKT</span>
+          <span class="scroll-hint" aria-hidden="true">Scroll <i></i></span>
         </div>
       </section>
 
-      <section class="about section-shell" id="about">
-        <p class="section-label">01 / About me</p>
-        <div class="about-grid">
-          <div class="about-copy reveal"><p>I am <strong>Syed Musab Pirzada</strong>, a Power Platform Developer and Dynamics 365 consultant based in Lahore.</p><p>I work at the intersection of business operations and technology - translating the messy, manual parts of work into systems people can actually use.</p><p>My focus is practical digital transformation: thoughtful solution design, useful automation, and business applications that support the people using them every day.</p></div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Power Apps</span><b>✦</b><span>Power Automate</span><b>✦</b><span>Dynamics 365</span><b>✦</b><span>Dataverse</span><b>✦</b><span>Copilot Studio</span><b>✦</b><span>Power Pages</span><b>✦</b>
+          <span>Power Apps</span><b>✦</b><span>Power Automate</span><b>✦</b><span>Dynamics 365</span><b>✦</b><span>Dataverse</span><b>✦</b><span>Copilot Studio</span><b>✦</b><span>Power Pages</span><b>✦</b>
+        </div>
+      </div>
+
+      <section class="about shell" id="about">
+        <p class="label reveal"><span>01</span> About me</p>
+        <div class="about-copy">
+          <p class="about-lead" data-words>I am <strong>Syed Musab Pirzada</strong>, a Power Platform Developer and Dynamics 365 consultant based in Lahore. I work at the intersection of business operations and technology, translating the messy, manual parts of work into systems people can actually use.</p>
+          <p class="about-body reveal">My focus is practical digital transformation: thoughtful solution design, useful automation, and business applications that support the people using them every day.</p>
         </div>
       </section>
 
-      <section class="capabilities section-shell" id="expertise">
-        <article class="capability reveal"><span>01</span><div><h2>Power<br />Platform</h2><p>Model-driven and Canvas Apps, Power Automate, Copilot Studio, AI Builder, Business Process Flows, and Dataverse.</p></div></article>
-        <article class="capability reveal"><span>02</span><div><h2>Dynamics 365<br />CE</h2><p>Sales, Customer Service, Customer Insights - Journeys, configuration, customization, security, and governance.</p></div></article>
-        <article class="capability reveal"><span>03</span><div><h2>Engineering &<br />Integration</h2><p>C#, JavaScript, plugins, PCF controls, ASP.NET Web API, REST APIs, Azure, SharePoint, and custom connectors.</p></div></article>
+      <section class="expertise shell" id="expertise">
+        <div class="section-head">
+          <p class="label reveal"><span>02</span> Expertise</p>
+          <h2 class="section-title reveal">What I <em>bring</em> to the table.</h2>
+        </div>
+        <ol class="cap-list">
+          <li class="cap reveal">
+            <span class="cap-num">01</span>
+            <h3>Power Platform</h3>
+            <p>Model-driven and Canvas Apps, Power Automate, Copilot Studio, AI Builder, Business Process Flows, and Dataverse.</p>
+            <span class="cap-arrow" aria-hidden="true">↗</span>
+          </li>
+          <li class="cap reveal">
+            <span class="cap-num">02</span>
+            <h3>Dynamics 365 CE</h3>
+            <p>Sales, Customer Service, Customer Insights - Journeys, configuration, customization, security, and governance.</p>
+            <span class="cap-arrow" aria-hidden="true">↗</span>
+          </li>
+          <li class="cap reveal">
+            <span class="cap-num">03</span>
+            <h3>Engineering &amp; Integration</h3>
+            <p>C#, JavaScript, plugins, PCF controls, ASP.NET Web API, REST APIs, Azure, SharePoint, and custom connectors.</p>
+            <span class="cap-arrow" aria-hidden="true">↗</span>
+          </li>
+        </ol>
       </section>
 
-      <section class="skills" aria-labelledby="skills-title">
-        <div class="skills-inner section-shell">
-          <p class="section-label">02 / Core toolkit</p>
-          <div class="skills-stage">
-            <div class="skill-orbit orbit-one" aria-hidden="true">
-              <div class="product-mark apps"><img src="assets/power-apps.svg" alt="" /><span>Power Apps</span></div>
-              <div class="product-mark automate"><img src="assets/power-automate.svg" alt="" /><span>Power Automate</span></div>
-              <div class="product-mark d365"><img src="assets/dynamics365.svg" alt="" /><span>Dynamics 365</span></div>
-              <div class="product-mark pages"><img src="assets/power-pages.svg" alt="" /><span>Power Pages</span></div>
+      <section class="toolkit" id="toolkit" aria-labelledby="toolkit-title">
+        <div class="shell">
+          <p class="label reveal"><span>03</span> Core toolkit</p>
+          <div class="stage">
+            <div class="stage-glow" aria-hidden="true"></div>
+            <div class="orbit" aria-hidden="true">
+              <div class="mark" style="--x:10%;--y:16%;--d:1.2"><img src="assets/power-apps.svg" alt="" /><span>Power Apps</span></div>
+              <div class="mark" style="--x:16%;--y:82%;--d:.7"><img src="assets/power-automate.svg" alt="" /><span>Power Automate</span></div>
+              <div class="mark" style="--x:78%;--y:13%;--d:1"><img src="assets/dynamics365.svg" alt="" /><span>Dynamics 365</span></div>
+              <div class="mark" style="--x:91%;--y:64%;--d:1.4"><img src="assets/power-pages.svg" alt="" /><span>Power Pages</span></div>
+              <div class="mark" style="--x:50%;--y:9%;--d:.5"><img src="assets/dataverse.svg" alt="" /><span>Dataverse</span></div>
+              <div class="mark" style="--x:8%;--y:50%;--d:.9"><img src="assets/copilot-studio.svg" alt="" /><span>Copilot Studio</span></div>
+              <div class="mark" style="--x:72%;--y:88%;--d:1.1"><img src="assets/sales.svg" alt="" /><span>D365 Sales</span></div>
+              <div class="mark" style="--x:38%;--y:90%;--d:.6"><img src="assets/customer-service.svg" alt="" /><span>Customer Service</span></div>
+              <div class="mark" style="--x:91%;--y:34%;--d:.8"><img src="assets/customer-insights.svg" alt="" /><span>Customer Insights</span></div>
             </div>
-            <div class="skill-orbit orbit-two" aria-hidden="true">
-              <div class="product-mark dataverse"><img src="assets/dataverse.svg" alt="" /><span>Dataverse</span></div>
-              <div class="product-mark bi"><img src="assets/copilot-studio.svg" alt="" /><span>Copilot Studio</span></div>
-              <div class="product-mark sales"><img src="assets/sales.svg" alt="" /><span>D365 Sales</span></div>
-              <div class="product-mark service"><img src="assets/customer-service.svg" alt="" /><span>Customer Service</span></div>
-              <div class="product-mark insights"><img src="assets/customer-insights.svg" alt="" /><span>Customer Insights</span></div>
+            <div class="stage-copy reveal">
+              <h2 id="toolkit-title">The platforms<br />behind <em>the work.</em></h2>
+              <p>Deep capability across the Microsoft business applications stack, from customer engagement to analytics, automation, and data.</p>
             </div>
-            <div class="skills-copy reveal"><h2 id="skills-title">The platforms<br />behind <em>the work.</em></h2><p>Deep capability across the Microsoft business applications stack - from customer engagement to analytics, automation, and data.</p></div>
           </div>
-          <div class="skill-names reveal"><span>Power Apps</span><span>Power Automate</span><span>Dynamics 365 CRM</span><span>Dataverse</span><span>Power Pages</span><span>Power Platform</span><span>Power BI</span><span>Copilot Studio</span><span>D365 Sales</span><span>D365 Customer Service</span><span>Customer Insights</span></div>
+          <ul class="chips reveal" aria-label="Platforms">
+            <li>Power Apps</li><li>Power Automate</li><li>Dynamics 365 CRM</li><li>Dataverse</li><li>Power Pages</li><li>Power Platform</li><li>Power BI</li><li>Copilot Studio</li><li>D365 Sales</li><li>D365 Customer Service</li><li>Customer Insights</li>
+          </ul>
         </div>
       </section>
 
-      <section class="impact section-shell">
-        <p class="section-label">03 / Built for impact</p>
-        <div class="impact-grid">
-          <div class="metric reveal"><strong>3<span>+</span></strong><p>Years delivering enterprise solutions</p></div>
-          <div class="metric reveal"><strong>3</strong><p>Regions served: Europe, Saudi Arabia & GCC</p></div>
-          <div class="metric reveal"><strong>360<span>°</span></strong><p>From requirements to deployment and support</p></div>
+      <section class="impact shell">
+        <p class="label reveal"><span>04</span> Built for impact</p>
+        <div class="metrics">
+          <div class="metric reveal"><strong><span data-to="3">0</span><sup>+</sup></strong><p>Years delivering enterprise solutions</p></div>
+          <div class="metric reveal"><strong><span data-to="3">0</span></strong><p>Regions served: Europe, Saudi Arabia &amp; GCC</p></div>
+          <div class="metric reveal"><strong><span data-to="360">0</span><sup>°</sup></strong><p>From requirements to deployment and support</p></div>
         </div>
       </section>
 
-      <section class="credentials section-shell" id="credentials">
-        <p class="section-label">04 / Credentials</p>
-        <div class="credential-list reveal"><p>Microsoft Certified: Power Platform Developer Associate <b>PL-400</b></p><p>Microsoft Applied Skills <b>Canvas Apps</b></p><p>Microsoft Applied Skills <b>Power Automate Flows</b></p></div>
+      <section class="credentials shell" id="credentials">
+        <div class="section-head">
+          <p class="label reveal"><span>05</span> Credentials</p>
+          <h2 class="section-title reveal">Certified by <em>Microsoft.</em></h2>
+        </div>
+        <ul class="cred-list">
+          <li class="reveal"><span>Microsoft Certified: Power Platform Developer Associate</span><b>PL-400</b></li>
+          <li class="reveal"><span>Microsoft Applied Skills</span><b>Canvas Apps</b></li>
+          <li class="reveal"><span>Microsoft Applied Skills</span><b>Power Automate Flows</b></li>
+        </ul>
       </section>
 
-      <section class="contact section-shell" id="contact">
-        <p class="section-label">05 / Get in touch</p>
-        <h2 class="reveal">Have a process<br />worth <em>improving?</em></h2>
-        <div class="contact-actions reveal"><a href="mailto:musabpir2002@gmail.com">musabpir2002@gmail.com <span>↗</span></a><a href="https://www.linkedin.com/in/syedmusabpirzada/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div>
-        <div class="social-links reveal" aria-label="Social media profiles">
-          <a href="https://x.com/s_musabpirzada" target="_blank" rel="noreferrer" aria-label="X profile"><b>𝕏</b><span>X</span></a>
-          <a href="https://www.linkedin.com/in/syedmusabpirzada/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><b>in</b><span>LinkedIn</span></a>
-          <a href="https://medium.com/@musabpirzada1" target="_blank" rel="noreferrer" aria-label="Medium profile"><b>M</b><span>Medium</span></a>
-          <a href="https://www.quora.com/profile/Musab-Pirzada/" target="_blank" rel="noreferrer" aria-label="Quora profile"><b>Q</b><span>Quora</span></a>
-          <a href="https://github.com/Musabpirzada" target="_blank" rel="noreferrer" aria-label="GitHub profile"><b>◉</b><span>GitHub</span></a>
+      <section class="contact" id="contact">
+        <div class="shell">
+          <p class="label reveal"><span>06</span> Get in touch</p>
+          <h2 class="contact-title">
+            <span class="line"><span>Have a process</span></span>
+            <span class="line"><span>worth <em>improving?</em></span></span>
+          </h2>
+          <div class="contact-row reveal">
+            <a class="mail" href="mailto:musabpir2002@gmail.com" data-magnetic><span>musabpir2002@gmail.com</span><i aria-hidden="true">↗</i></a>
+            <nav class="socials" aria-label="Social media profiles">
+              <a href="https://www.linkedin.com/in/syedmusabpirzada/" target="_blank" rel="noreferrer" class="roll" data-text="LinkedIn"><span>LinkedIn</span></a>
+              <a href="https://x.com/s_musabpirzada" target="_blank" rel="noreferrer" class="roll" data-text="X / Twitter"><span>X / Twitter</span></a>
+              <a href="https://github.com/Musabpirzada" target="_blank" rel="noreferrer" class="roll" data-text="GitHub"><span>GitHub</span></a>
+              <a href="https://medium.com/@musabpirzada1" target="_blank" rel="noreferrer" class="roll" data-text="Medium"><span>Medium</span></a>
+              <a href="https://www.quora.com/profile/Musab-Pirzada/" target="_blank" rel="noreferrer" class="roll" data-text="Quora"><span>Quora</span></a>
+            </nav>
+          </div>
         </div>
       </section>
     </main>
-    <footer><span>Syed Musab Pirzada</span><span>Power Platform & Dynamics 365</span><a href="#top">Back to top ↑</a></footer>
+
+    <footer class="shell">
+      <span>© 2026 Syed Musab Pirzada</span>
+      <span>Power Platform &amp; Dynamics 365</span>
+      <a href="#top" class="roll" data-text="Back to top ↑"><span>Back to top ↑</span></a>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
